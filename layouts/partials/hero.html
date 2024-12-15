@@ -1,0 +1,83 @@
+{{ "<!-- Homepage Hero -->" | safeHTML }}
+
+<section class="hero is-dark">
+
+    <!-- Hero head: will stick at the top -->
+    <div class="hero-head">
+        {{ partial "nav.html" . }}
+    </div>
+
+    <!-- Hero content: will be in the middle -->
+    <div class="hero-body hero-content">
+        <!-- Black overlay box -->
+        <div class="black-overlay"></div>
+        
+        <!-- Logo Overlay -->
+        <div class="fixed-overlay-image">
+            <img src="{{ "/img/logo/logo-arm.png" | relURL }}" alt="Logo Overlay">
+        </div>
+    </div>
+    
+    <!-- Hero footer: will stick at the bottom -->
+    <div class="p-5 pb-6 is-dark uqmars-background text-white">
+        <h1 class="text-blue title is-centered has-text-centered">Welcome to UQ Mars</h1>
+        <p class="is-centred uqmars-blurb">
+            UQ Mars (Mechatronics and Robotics Society) 
+            is a community for anyone with a keen passion for the fields of robotics, mechatronics, and their applications. 
+            We aim to foster the development of the robotics skills of our members through a variety of extra-curricular activities, 
+            including competition teams, support workshops and social events. While primarily made up of engineering students, 
+            we welcome anyone looking to get involved.
+        </p>
+        <div class="buttons is-centered">
+            <a href="https://uqmars.square.site/">
+                <button class="button join-button is-large has-text-weight-bold">
+                    Join UQ MARS!
+                </button>
+            </a>
+        </div>
+    </div>
+</section>
+
+<style>
+    /* Hero Content with Background Image */
+    .hero-content {
+        position: relative; /* Container for overlay */
+        background-image: url('{{ "/img/media/home/home_one.jpg" | relURL }}');
+        background-size: cover; /* Cover entire area */
+        background-position: center; /* Center the image */
+        height: 400px; /* Adjust height as needed */
+        width: 100%; /* Full width */
+        overflow: hidden;
+    }
+
+    /* Black Overlay Box */
+    .black-overlay {
+        position: absolute; /* Overlay on top of the hero content */
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%; /* Cover the entire hero-content */
+        background-color: rgba(0, 0, 0, 0.6); /* Black with 50% opacity */
+        z-index: 1; /* Place it below the logo */
+    }
+
+    /* Overlay Image Container */
+    .fixed-overlay-image {
+        position: absolute; /* Positioned on top of hero-content */
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%; /* Match hero-content dimensions */
+        display: flex; /* Align the image */
+        justify-content: center; /* Center horizontally */
+        align-items: center; /* Center vertically */
+        z-index: 2; /* Above the black overlay */
+    }
+
+    .fixed-overlay-image img {
+        max-width: 90%; /* Adjust size of the logo */
+        max-height: 90%; /* Ensure it fits within container */
+        object-fit: contain; /* Keep proportions */
+    }
+</style>
+
