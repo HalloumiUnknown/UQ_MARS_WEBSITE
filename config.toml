@@ -15,7 +15,7 @@ title = "UQ MARS"
 
     description = "UQ Mars (Mechatronics and Robotics Society) is a community that fosters robotics and mechatronics skills through competitions, workshops, and social events, welcoming anyone with a passion for these fields."
 
-    custom_css = ["/css/main.css", "/css/website.css"]
+    custom_css = ["/static/css/main.css", "/static/css/website.css"]
     custom_js  = ["/js/navigation.js", "/js/button-box.js", "/js/favicon.js"]
     custom_ico = "/img/favicon/favicon.ico"
     custom_fonts = []
