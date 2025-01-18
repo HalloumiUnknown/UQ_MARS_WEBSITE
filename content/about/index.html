@@ -5,64 +5,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us</title>
     <style>
+        /* General Reset */
         body {
             font-family: "Inter", sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f9f9f9;
         }
+
+        /* Container Styling */
         .container {
             max-width: 1200px;
             margin: 0 auto;
             padding: 20px;
         }
+
+        /* Intro Section */
         .intro {
             text-align: center;
             margin-top: 20px;
         }
+
         .intro h1 {
             font-size: 2.5em;
-            color: var(--dark-purple);
+            color: #4a4a6a; /* Dark purple */
             font-weight: bold;
         }
+
         .intro p {
             margin-top: 10px;
             font-size: 1.2em;
-            color: var(--dark-purple);
+            color: #4a4a6a;
         }
-        .header {
-            position: relative;
-            width: 100%;
-            padding-top: 30%; /* 10:3 aspect ratio */
-            overflow: hidden;
-            border-radius: 8px;
-            margin: 20px 0 40px;
-        }
+
+        /* Header Section */
         .header img {
-            position: absolute;
-            top: 0;
-            left: 0;
             width: 100%;
-            height: 100%;
-            object-fit: cover;
+            height: auto;
+            display: block;
         }
-        section {
-            margin-top: 40px;
-        }
+
+        /* Section Headings */
         section h2 {
             font-size: 2em;
             margin-bottom: 20px;
-            color: var(--dark-purple);
+            color: #4a4a6a;
             font-weight: bold;
             text-align: center;
         }
-        section p {
-            font-size: 1.2em;
-            line-height: 1.6;
-            color: var(--dark-purple);
-            text-align: justify;
-            margin: 10px 0;
-        }
+
+        /* Team Grid Styling */
         .team-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -70,63 +62,92 @@
             justify-items: center;
             margin-top: 20px;
         }
+
+        /* Team Card Styling */
         .team-card {
-            background: white;
-            border-radius: 8px;
+            background: #2e3141; /* Dark purple */
+            border-radius: 12px; /* Slight rounding for modern design */
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             text-align: center;
-            padding: 15px;
-            transition: transform 0.3s ease;
+            padding: 20px;
+            width: 100%;
+            max-width: 260px; /* Adjusted for consistent card sizing */
+            height: 340px; /* Balanced height for consistent layout */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
+
         .team-card:hover {
             transform: translateY(-5px);
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
         }
+
+        /* Image Styling */
         .team-card img {
-            width: 100px;
-            height: 100px;
-            border-radius: 50%;
+            width: 150px; /* Larger image size for better proportion */
+            height: 150px;
+            border-radius: 10px; /* Slightly rounded edges */
             object-fit: cover;
             margin-bottom: 10px;
         }
+
+        /* Text Styling */
         .team-card h3 {
-            font-size: 1.2em;
-            color: black;
+            font-size: 1.3em; /* Name font size */
+            color: #ffffff;
             margin: 5px 0;
+            line-height: 1.1; /* Reduced line height for tighter spacing */
+            text-align: center;
         }
+
         .team-card p {
-            font-size: 1em;
-            color: #555;
-            margin: 5px 0;
+            font-size: 1em; /* Slightly reduced text size */
+            color: #c5c5c5;
+            margin: 3px 0; /* Reduced margin between lines */
+            line-height: 1.2; /* Compact line height */
+            text-align: center;
         }
+
         .team-card a {
-            font-size: 0.9em;
-            color: var(--blue);
+            font-size: 0.9em; /* Social handle font size */
+            color: #add8e6; /* Light blue */
             text-decoration: none;
             font-weight: bold;
+            margin-top: 5px; /* Spacing above the social handle */
+            line-height: 1.1; /* Compact spacing for links */
         }
+
         .team-card a:hover {
+            color: #ffffff; /* Highlight link on hover */
             text-decoration: underline;
         }
+
+        /* CTA Button */
         .cta {
             text-align: center;
             margin-top: 40px;
         }
+
         .cta a {
             display: inline-block;
-            margin-top: 20px;
             padding: 10px 20px;
-            background-color: var(--blue);
+            background-color: #4a4a6a; /* Dark purple */
             color: white;
-            text-decoration: none;
             font-size: 1em;
             font-weight: bold;
             border-radius: 8px;
+            text-decoration: none;
             transition: background-color 0.3s ease;
         }
+
         .cta a:hover {
-            background-color: var(--dark-purple);
+            background-color: #2e3141; /* Slightly darker on hover */
         }
     </style>
+    
 </head>
 <body>
     <div class="container">
@@ -169,81 +190,87 @@
         <!-- Meet the Team Section -->
         <section>
             <h2>Meet Our Executive Team</h2>
+
+            <!-- T5 Execs (Separate Grid for Top Level Executives) -->
             <div class="team-grid">
                 <div class="team-card">
-                    <img src="https://via.placeholder.com/100" alt="Quinn Horton">
+                    <img src="https://halloumiunknown.github.io/UQ_MARS_WEBSITE/img/execs/quinnhorton.jpg" alt="Quinn Horton">
                     <h3>Quinn Horton</h3>
                     <p>President</p>
                     <a href="#">@quinnhorton</a>
                 </div>
                 <div class="team-card">
-                    <img src="https://via.placeholder.com/100" alt="Binara Wasala">
-                    <h3>Binara Wasala</h3>
-                    <p>Secretary</p>
-                    <a href="#">@binarawasala</a>
-                </div>
-                <div class="team-card">
-                    <img src="https://via.placeholder.com/100" alt="Samantha Krause">
+                    <img src="https://halloumiunknown.github.io/UQ_MARS_WEBSITE/img/execs/samanthakrause.png" alt="Samantha Krause">
                     <h3>Samantha Krause</h3>
                     <p>Treasurer</p>
                     <a href="#">@samanthakrause</a>
                 </div>
                 <div class="team-card">
-                    <img src="https://via.placeholder.com/100" alt="Zac Apelt">
+                    <img src="https://halloumiunknown.github.io/UQ_MARS_WEBSITE/img/execs/binarawasala.jpg" alt="Binara Wasala">
+                    <h3>Binara Wasala</h3>
+                    <p>Secretary</p>
+                    <a href="#">@binarawasala</a>
+                </div>
+                <div class="team-card">
+                    <img src="https://via.placeholder.com/140" alt="Phillip Reid">
+                    <h3>Phillip Reid</h3>
+                    <p>Mechatronics VP</p>
+                    <a href="#">@phillipreid</a>
+                </div>
+                <div class="team-card">
+                    <img src="https://halloumiunknown.github.io/UQ_MARS_WEBSITE/img/execs/slatersummut.jpg" alt="Slater Sammut">
+                    <h3>Slater Sammut</h3>
+                    <p>Robotics VP</p>
+                    <a href="#">@slatersammut</a>
+                </div>
+            </div>
+
+            <!-- Other Execs -->
+            <div class="team-grid">
+                <div class="team-card">
+                    <img src="https://via.placeholder.com/140" alt="Zac Apelt">
                     <h3>Zac Apelt</h3>
                     <p>Competitions Lead</p>
                     <a href="#">@zacapelt</a>
                 </div>
                 <div class="team-card">
-                    <img src="https://via.placeholder.com/100" alt="Alana Cawthorne">
+                    <img src="https://via.placeholder.com/140" alt="Alana Cawthorne">
                     <h3>Alana Cawthorne</h3>
                     <p>Marketing Lead</p>
                     <a href="#">@alanacawthorne</a>
                 </div>
                 <div class="team-card">
-                    <img src="https://halloumiunknown.github.io/UQ_MARS_WEBSITE/img/execs/josephhatcliff.png" alt="Joseph Hatcliff">
+                    <img src="https://halloumiunknown.github.io/UQ_MARS_WEBSITE/img/execs/josephhatcliff.jpg" alt="Joseph Hatcliff">
                     <h3>Joseph Hatcliff</h3>
                     <p>Technical Lead</p>
                     <a href="#">@josephhatcliff</a>
                 </div>
                 <div class="team-card">
-                    <img src="https://via.placeholder.com/100" alt="Shaariq Jaldin">
+                    <img src="https://via.placeholder.com/140" alt="Shaariq Jaldin">
                     <h3>Shaariq Jaldin</h3>
                     <p>Partnerships Lead</p>
                     <a href="#">@shaariqjaldin</a>
                 </div>
                 <div class="team-card">
-                    <img src="https://via.placeholder.com/100" alt="Oscar Lloyd">
+                    <img src="https://halloumiunknown.github.io/UQ_MARS_WEBSITE/img/execs/oscarlloyd.jpg" alt="Oscar Lloyd">
                     <h3>Oscar Lloyd</h3>
                     <p>Projects Lead</p>
                     <a href="#">@oscarlloyd</a>
                 </div>
                 <div class="team-card">
-                    <img src="https://via.placeholder.com/100" alt="Erin McGrath">
+                    <img src="https://via.placeholder.com/140" alt="Erin McGrath">
                     <h3>Erin McGrath</h3>
                     <p>Outreach Lead</p>
                     <a href="#">@erinmcgrath</a>
                 </div>
                 <div class="team-card">
-                    <img src="https://via.placeholder.com/100" alt="Ethan Ney">
+                    <img src="https://via.placeholder.com/140" alt="Ethan Ney">
                     <h3>Ethan Ney</h3>
                     <p>Events Lead</p>
                     <a href="#">@ethanney</a>
                 </div>
                 <div class="team-card">
-                    <img src="https://via.placeholder.com/100" alt="Phillip Reid">
-                    <h3>Phillip Reid</h3>
-                    <p>Vice-President (Mechatronics)</p>
-                    <a href="#">@phillipreid</a>
-                </div>
-                <div class="team-card">
-                    <img src="https://via.placeholder.com/100" alt="Slater Sammut">
-                    <h3>Slater Sammut</h3>
-                    <p>Vice-President (Robotics)</p>
-                    <a href="#">@slatersammut</a>
-                </div>
-                <div class="team-card">
-                    <img src="https://via.placeholder.com/100" alt="Ganesh Srinivasa">
+                    <img src="https://via.placeholder.com/140" alt="Ganesh Srinivasa">
                     <h3>Ganesh Srinivasa</h3>
                     <p>Workshops Lead</p>
                     <a href="#">@ganeshsrinivasa</a>
