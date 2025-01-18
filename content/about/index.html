@@ -34,6 +34,7 @@
 
         .intro p {
             margin-top: 10px;
+            margin-bottom: 20px;
             font-size: 1.2em;
             color: #4a4a6a;
         }
@@ -53,6 +54,18 @@
             font-weight: bold;
             text-align: center;
         }
+
+        /* Add space between paragraphs in "Student Driven" section */
+        section h2 + p {
+        margin-bottom: 20px; /* Adjust spacing */
+        }
+
+        /* Add even spacing between headers */
+        section h2 {
+        margin-top: 30px;  /* Increase top margin */
+        margin-bottom: 25px; /* Adjust bottom margin */
+        }
+
 
         /* Team Grid Styling */
         .team-grid {
@@ -128,17 +141,17 @@
         /* CTA Button */
         .cta {
             text-align: center;
-            margin-top: 40px;
+            margin-top: 20px;
         }
 
         .cta a {
             display: inline-block;
-            padding: 10px 20px;
+            padding: 15px 30px;
             background-color: #4a4a6a; /* Dark purple */
             color: white;
-            font-size: 1em;
+            font-size: 2em;
             font-weight: bold;
-            border-radius: 8px;
+            border-radius: 10px;
             text-decoration: none;
             transition: background-color 0.3s ease;
         }
@@ -185,6 +198,18 @@
                 We also participate in global robotics competitions, where students can take projects from concept to execution. 
                 These competitions help our members develop technical skills, teamwork, and confidence as future engineers.
             </p>
+        </section>
+        
+         <!-- How to Join Section -->
+         <section>
+            <h2>How to Join</h2>
+            <p>
+                Joining UQ MARS is easy! Membership costs just $2 per year. You can sign up online, at one of our events, 
+                or by visiting our stall during Market Day. Get involved today and become part of UQ's vibrant robotics community.
+            </p>
+            <div class="cta">
+                <a href="https://uqmars.square.site/">Join Now</a>
+            </div>
         </section>
 
         <!-- Meet the Team Section -->
@@ -243,7 +268,7 @@
                     <img src="https://halloumiunknown.github.io/UQ_MARS_WEBSITE/img/execs/josephhatcliff.jpg" alt="Joseph Hatcliff">
                     <h3>Joseph Hatcliff</h3>
                     <p>Technical Lead</p>
-                    <a href="#">@josephhatcliff</a>
+                    <a href="https://www.linkedin.com/in/josephhatcliff/">@josephhatcliff</a>
                 </div>
                 <div class="team-card">
                     <img src="https://via.placeholder.com/140" alt="Shaariq Jaldin">
@@ -255,7 +280,7 @@
                     <img src="https://halloumiunknown.github.io/UQ_MARS_WEBSITE/img/execs/oscarlloyd.jpg" alt="Oscar Lloyd">
                     <h3>Oscar Lloyd</h3>
                     <p>Projects Lead</p>
-                    <a href="#">@oscarlloyd</a>
+                    <a href="https://linktr.ee/oscar_lloyd">@oscarlloyd</a>
                 </div>
                 <div class="team-card">
                     <img src="https://via.placeholder.com/140" alt="Erin McGrath">
@@ -278,17 +303,6 @@
             </div>
         </section>
 
-        <!-- How to Join Section -->
-        <section>
-            <h2>How to Join</h2>
-            <p>
-                Joining UQ MARS is easy! Membership costs just $2 per year. You can sign up online, at one of our events, 
-                or by visiting our stall during Market Day. Get involved today and become part of UQ's vibrant robotics community.
-            </p>
-            <div class="cta">
-                <a href="https://uqmars.square.site/">Join Now</a>
-            </div>
-        </section>
     </div>
 </body>
 </html>
