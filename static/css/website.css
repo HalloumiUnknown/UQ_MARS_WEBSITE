@@ -217,3 +217,40 @@ zero-md > * {
   border: 2px solid white !important;
   border-radius: 0px !important;
 }
+
+.icons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* Allows icons to wrap to the next line on smaller screens */
+  gap: 20px; /* Adjust spacing between icons */
+}
+
+.icon-item {
+  text-align: center;
+  width: 100px; /* Adjust width as needed */
+}
+
+.icon-link img {
+  width: 60px; /* Set icon size */
+  height: 60px;
+  transition: transform 0.3s; /* Hover effect */
+}
+
+.icon-link img:hover {
+  transform: scale(1.1); /* Slight zoom on hover */
+}
+
+.icon-label {
+  margin-top: 8px;
+  font-size: 14px; /* Adjust font size for labels */
+  color: #ffffff; /* White text for labels */
+}
+
+.svg-icon {
+  fill: #a099cb; /* Set the color of the SVG */
+  transition: fill 0.3s;
+}
+
+.svg-icon:hover {
+  fill: #ffffff; /* Change color on hover */
+}
