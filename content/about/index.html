@@ -33,7 +33,7 @@
         .header {
             position: relative;
             width: 100%;
-            padding-top: 30%; /* 10:3 aspect ratio (3/10 * 100) */
+            padding-top: 30%; /* 10:3 aspect ratio */
             overflow: hidden;
             border-radius: 8px;
             margin: 20px 0 40px;
@@ -44,7 +44,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            object-fit: cover; /* Ensures the image covers the area without distortion */
+            object-fit: cover;
         }
         section {
             margin-top: 40px;
@@ -63,6 +63,50 @@
             text-align: justify;
             margin: 10px 0;
         }
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            justify-items: center;
+            margin-top: 20px;
+        }
+        .team-card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            padding: 15px;
+            transition: transform 0.3s ease;
+        }
+        .team-card:hover {
+            transform: translateY(-5px);
+        }
+        .team-card img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+        .team-card h3 {
+            font-size: 1.2em;
+            color: black;
+            margin: 5px 0;
+        }
+        .team-card p {
+            font-size: 1em;
+            color: #555;
+            margin: 5px 0;
+        }
+        .team-card a {
+            font-size: 0.9em;
+            color: var(--blue);
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .team-card a:hover {
+            text-decoration: underline;
+        }
         .cta {
             text-align: center;
             margin-top: 40px;
@@ -72,7 +116,7 @@
             margin-top: 20px;
             padding: 10px 20px;
             background-color: var(--blue);
-            color: #fff;
+            color: white;
             text-decoration: none;
             font-size: 1em;
             font-weight: bold;
@@ -106,11 +150,6 @@
                 from academic workshops to competitive challenges and industry connections. 
                 We are committed to helping students explore their passion for robotics and technology.
             </p>
-            <p>
-                Our activities include hands-on technical workshops, networking events, and team-based projects 
-                that allow students to apply theoretical knowledge to real-world challenges. 
-                Whether you're just starting out or a seasoned enthusiast, UQ MARS is your hub for robotics at UQ.
-            </p>
         </section>
 
         <!-- Student Driven Section -->
@@ -127,16 +166,88 @@
             </p>
         </section>
 
-        <!-- Executive Team Section -->
+        <!-- Meet the Team Section -->
         <section>
             <h2>Meet Our Executive Team</h2>
-            <p>
-                UQ MARS is run by a dedicated team of undergraduate students who share a passion for robotics and technology. 
-                They work tirelessly to organize events, manage projects, and support our members. 
-                Get to know the people behind the society who make it all happen.
-            </p>
-            <div class="cta">
-                <a href="/team">Meet the Team</a>
+            <div class="team-grid">
+                <div class="team-card">
+                    <img src="https://via.placeholder.com/100" alt="Quinn Horton">
+                    <h3>Quinn Horton</h3>
+                    <p>President</p>
+                    <a href="#">@quinnhorton</a>
+                </div>
+                <div class="team-card">
+                    <img src="https://via.placeholder.com/100" alt="Binara Wasala">
+                    <h3>Binara Wasala</h3>
+                    <p>Secretary</p>
+                    <a href="#">@binarawasala</a>
+                </div>
+                <div class="team-card">
+                    <img src="https://via.placeholder.com/100" alt="Samantha Krause">
+                    <h3>Samantha Krause</h3>
+                    <p>Treasurer</p>
+                    <a href="#">@samanthakrause</a>
+                </div>
+                <div class="team-card">
+                    <img src="https://via.placeholder.com/100" alt="Zac Apelt">
+                    <h3>Zac Apelt</h3>
+                    <p>Competitions Lead</p>
+                    <a href="#">@zacapelt</a>
+                </div>
+                <div class="team-card">
+                    <img src="https://via.placeholder.com/100" alt="Alana Cawthorne">
+                    <h3>Alana Cawthorne</h3>
+                    <p>Marketing Lead</p>
+                    <a href="#">@alanacawthorne</a>
+                </div>
+                <div class="team-card">
+                    <img src="https://halloumiunknown.github.io/UQ_MARS_WEBSITE/img/execs/josephhatcliff.png" alt="Joseph Hatcliff">
+                    <h3>Joseph Hatcliff</h3>
+                    <p>Technical Lead</p>
+                    <a href="#">@josephhatcliff</a>
+                </div>
+                <div class="team-card">
+                    <img src="https://via.placeholder.com/100" alt="Shaariq Jaldin">
+                    <h3>Shaariq Jaldin</h3>
+                    <p>Partnerships Lead</p>
+                    <a href="#">@shaariqjaldin</a>
+                </div>
+                <div class="team-card">
+                    <img src="https://via.placeholder.com/100" alt="Oscar Lloyd">
+                    <h3>Oscar Lloyd</h3>
+                    <p>Projects Lead</p>
+                    <a href="#">@oscarlloyd</a>
+                </div>
+                <div class="team-card">
+                    <img src="https://via.placeholder.com/100" alt="Erin McGrath">
+                    <h3>Erin McGrath</h3>
+                    <p>Outreach Lead</p>
+                    <a href="#">@erinmcgrath</a>
+                </div>
+                <div class="team-card">
+                    <img src="https://via.placeholder.com/100" alt="Ethan Ney">
+                    <h3>Ethan Ney</h3>
+                    <p>Events Lead</p>
+                    <a href="#">@ethanney</a>
+                </div>
+                <div class="team-card">
+                    <img src="https://via.placeholder.com/100" alt="Phillip Reid">
+                    <h3>Phillip Reid</h3>
+                    <p>Vice-President (Mechatronics)</p>
+                    <a href="#">@phillipreid</a>
+                </div>
+                <div class="team-card">
+                    <img src="https://via.placeholder.com/100" alt="Slater Sammut">
+                    <h3>Slater Sammut</h3>
+                    <p>Vice-President (Robotics)</p>
+                    <a href="#">@slatersammut</a>
+                </div>
+                <div class="team-card">
+                    <img src="https://via.placeholder.com/100" alt="Ganesh Srinivasa">
+                    <h3>Ganesh Srinivasa</h3>
+                    <p>Workshops Lead</p>
+                    <a href="#">@ganeshsrinivasa</a>
+                </div>
             </div>
         </section>
 
