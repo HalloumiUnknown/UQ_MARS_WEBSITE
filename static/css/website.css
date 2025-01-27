@@ -254,3 +254,18 @@ zero-md > * {
 .svg-icon:hover {
   fill: #ffffff; /* Change color on hover */
 }
+
+.footer {
+  position: relative; /* Ensures the footer acts as the relative parent for absolute elements */
+}
+
+.abn-container {
+  position: absolute; /* Positions the ABN within the footer */
+  bottom: 20px; /* Adjust the distance from the bottom */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Perfect horizontal centering */
+  color: var(--blue); /* Text color */
+  font-weight: bold; /* Bold text */
+  font-size: 1.2rem; /* Font size */
+  z-index: 10; /* Bring the ABN above other elements */
+}
