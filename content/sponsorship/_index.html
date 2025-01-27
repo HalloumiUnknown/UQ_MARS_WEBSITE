@@ -1,13 +1,10 @@
----
-title: "Sponsorship"
-draft: false
----
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sponsorship Tiers</title>
+    <title>Sponsorship Portfolios</title>
+    <link rel="icon" href="/img/favicon/favicon.ico" type="image/png"/>
     <style>
         body {
             font-family: "Inter", sans-serif;
@@ -31,98 +28,67 @@ draft: false
         }
         .intro p {
             margin-top: 10px;
+            margin-bottom: 10px;
             font-size: 1.2em;
             color: var(--dark-purple);
         }
-        .header {
-            position: relative;
-            text-align: center;
-            margin: 20px 0 40px;
-            border-radius: 8px;
-            overflow: hidden;
-        }
-        .header .background-image {
-            width: 100%;
-            height: auto;
-            filter: brightness(0.5);
-            border-radius: 8px;
-        }
-        .header .fixed-overlay-image {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            z-index: 2;
-            width: 60%;
-        }
-        .header .fixed-overlay-image img {
-            width: 100%;
-            height: auto;
-            object-fit: contain;
-        }
-        .tiers {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            margin-top: 40px;
-        }
-        .tier {
+        .portfolio {
             background-color: var(--dark-purple);
             border: 1px solid #ccc;
             border-radius: 8px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
             padding: 20px;
-            text-align: center;
-            color: var(--white);
-        }
-        .tier h2 {
-            margin: 0 0 10px;
-            font-size: 1.8em;
-            color: var(--white);
-            font-weight: bold;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 10px;
-        }
-        .tier h2 img {
-            width: 40px;
-            height: 40px;
-        }
-        .tier h3 {
-            margin: 10px 0;
-            font-size: 1.2em;
-            color: var(--dark-purple);
-            font-weight: bold;
-        }
-        .tier ul {
-            list-style-type: none;
-            padding: 0;
-            margin: 20px 0;
-            color: var(--white);
-        }
-        .tier ul li {
-            margin: 10px 0;
-        }
-        .tier .price {
-            font-size: 1.5em;
-            font-weight: bold;
-            color: var(--blue);
-        }
-        .prospectus {
-            margin-top: 40px;
-            text-align: center;
-        }
-        .prospectus h2 {
-            font-size: 2em;
             margin-bottom: 20px;
-            color: var(--dark-purple);
-            font-weight: bold;
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            color: var(--white);
         }
-        .prospectus iframe {
-            width: 100%;
-            height: 600px;
-            border: none;
+        .portfolio-content {
+            flex: 1;
+            margin-right: 20px;
+            text-align: left;
+        }
+        .portfolio h2 {
+            font-size: 1.8em;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .portfolio p {
+            font-size: 0.8em;
+            margin-bottom: 15px;
+        }
+        .portfolio ul {
+            list-style-type: disc;
+            padding-left: 40px;
+            margin-top: 10px;
+        }
+        .portfolio ul li {
+            margin-bottom: 10px;
+            font-size: 0.8em;
+        }
+        .portfolio img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+        .button-container {
+            text-align: center;
+            margin-top: 40px;
+        }
+        .button-container a {
+            display: inline-block;
+            text-decoration: none;
+            font-size: 1.2em;
+            color: #fff;
+            background-color: var(--blue);
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .button-container a:hover {
+            background-color: #6a5acd;
         }
     </style>
 </head>
@@ -130,113 +96,77 @@ draft: false
     <div class="container">
         <div class="intro">
             <h1>Partnering with UQ MARS</h1>
-            <p>Explore our sponsorship tiers and the benefits of partnering with UQ MARS.</p>
+            <p>Explore our sponsorship portfolios and the benefits of collaborating with UQ MARS.</p>
         </div>
 
-        <div class="header">
-            <img src="../img/media/turbo_back.jpg" alt="UQ MARS Sponsorship Overview" class="background-image">
-            <div class="fixed-overlay-image">
-                <img src="../img/logo/logo.png" alt="UQ MARS Logo">
+        <div class="portfolio">
+            <div class="portfolio-content">
+                <h2>Competitions Portfolio - Innovation</h2>
+                <p>Packages included in the Innovation prospectus are designed to elevate the quality of UQ MARS’s competitions portfolio. By contributing to this package, sponsors contribute to the development of the next generation of engineers and innovators.</p>
+                <ul>
+                    <li><b>Elevate Event Quality:</b> Your company is recognised and thanked at the opening of one of our flagship events. (Principal Flagship Sponsor)</li>
+                    <li><b>Amplify Innovation Outcomes:</b> The personnel of your company provides their expertise in an educational segment in a flagship event. (Event Sponsor)</li>
+                    <li><b>Strengthen Industry Presence:</b> Your company gains the exclusive privilege of having increased foot traffic to your company booth by being positioned at an entrance point at the Expo. (Principal Expo Sponsor)</li>
+                </ul>
             </div>
+            <img src="placeholder-innovation.jpg" alt="Innovation Portfolio">
         </div>
 
-        <div class="tiers">
-            <!-- Bronze Tier -->
-            <div class="tier">
-                <h2><img src="../img/favicon/bronze-icon.svg" alt="Bronze Icon">Bronze Tier</h2>
-                <h3 class="price">$250</h3>
+        <div class="portfolio">
+            <div class="portfolio-content">
+                <h2>Outreach Portfolio - Community</h2>
+                <p>The Outreach Portfolio focuses on fostering community connections and promoting STEM education. Sponsors of this portfolio help enable outreach programs that inspire and educate students and professionals alike.</p>
                 <ul>
-                    <li>Listed on the club website</li>
-                    <li>Advertise opportunities on all social media platforms</li>
-                    <li>Send up to two representatives at networking events</li>
+                    <li><b>Promote Corporate Values:</b> Your logo is featured on educational materials used during outreach programs.</li>
+                    <li><b>Drive Community Impact:</b> Gain recognition on social media for your contributions to outreach events.</li>
+                    <li><b>Foster Accessibility:</b> Sponsorship funds can be directed towards travel costs for outreach teams, enabling them to reach remote locations.</li>
                 </ul>
             </div>
-
-            <!-- Silver Tier -->
-            <div class="tier">
-                <h2><img src="../img/favicon/silver-icon.svg" alt="Silver Icon">Silver Tier</h2>
-                <h3 class="price">$1,000</h3>
-                <ul>
-                    <li>All perks of bronze tier</li>
-                    <li>Present one of our regular talks/seminars</li>
-                    <li>Send representation to an industry event</li>
-                    <li>Use of your product as a core component in a workshop</li>
-                </ul>
-            </div>
-
-            <!-- Gold Tier -->
-            <div class="tier">
-                <h2><img src="../img/favicon/gold-icon.svg" alt="Gold Icon">Gold Tier</h2>
-                <h3 class="price">$4,000</h3>
-                <ul>
-                    <li>All perks of silver tier</li>
-                    <li>Representative on judging panel for key events</li>
-                    <li>Host a dedicated event with us</li>
-                    <li>Your logo on our competition uniforms</li>
-                </ul>
-            </div>
-
-            <!-- Turbo Tier -->
-            <div class="tier">
-                <h2><img src="../img/favicon/turbo-icon.svg" alt="Turbo Icon">Turbo Tier</h2>
-                <h3 class="price">$10,000</h3>
-                <ul>
-                    <li>All perks of gold tier</li>
-                    <li>Sole partnership in one flagship event</li>
-                    <li>Exclusive branding opportunities</li>
-                </ul>
-            </div>
+            <img src="placeholder-community.jpg" alt="Community Portfolio">
         </div>
 
-        <div class="prospectus">
-            <iframe
-                src="../main_compressed.pdf"
-                title="Sponsorship Prospectus"
-                width="100%"
-                height="100%">
-            </iframe>
+        <div class="portfolio">
+            <div class="portfolio-content">
+                <h2>Projects Portfolio - Empowerment</h2>
+                <p>The Projects Portfolio empowers innovation through support for groundbreaking STEM initiatives and projects. Contributions to this portfolio help bring ambitious concepts to life.</p>
+                <ul>
+                    <li><b>Champion Ambitious Projects:</b> Support key initiatives like the RoboWars team and other STEM endeavors.</li>
+                    <li><b>Foster The Future:</b> Contribute to the development of long-term, innovative projects.</li>
+                    <li><b>Elevate Brand Visibility:</b> Enjoy prominent branding opportunities on major projects.</li>
+                </ul>
+            </div>
+            <img src="placeholder-empowerment.jpg" alt="Empowerment Portfolio">
         </div>
-        
-        
-             
+
+        <div class="portfolio">
+            <div class="portfolio-content">
+                <h2>Administrative Portfolio - Excellence</h2>
+                <p>Support the essential operations of UQ MARS through the Administrative Portfolio. This portfolio ensures the smooth running of events and club activities, fostering an environment of excellence.</p>
+                <ul>
+                    <li><b>Sustain Operational Success:</b> Provide your expertise and resources to help team members excel.</li>
+                    <li><b>Enable Growth:</b> Contribute branded items or services that enhance event experiences.</li>
+                    <li><b>Demonstrate Impact:</b> Receive acknowledgement at annual meetings and key events.</li>
+                </ul>
+            </div>
+            <img src="placeholder-excellence.jpg" alt="Excellence Portfolio">
+        </div>
+
+        <div class="portfolio">
+            <div class="portfolio-content">
+                <h2>Minor Events Portfolio - Encouragement</h2>
+                <p>The Minor Events Portfolio supports smaller-scale activities that engage members and promote interaction within the club. These events serve as stepping stones for deeper involvement and partnerships.</p>
+                <ul>
+                    <li><b>Start Partnerships:</b> Gain recognition for sponsoring minor event facilities and logistics.</li>
+                    <li><b>Support Engagement:</b> Promote your products to members during quarterly events.</li>
+                    <li><b>Promote Your Brand:</b> Associate your name with event prizes and awards, boosting visibility.</li>
+                </ul>
+            </div>
+            <img src="placeholder-encouragement.jpg" alt="Encouragement Portfolio">
+        </div>
+
+        <div class="button-container">
+            <a href="../main_compressed.pdf" target="_blank">Open our full prospectus here!</a>
+        </div>
     </div>
 </body>
 </html>
-
-<style>
-    /* Existing styles */
-    .tiers {
-        margin-bottom: 30px; /* Adds space below the tiers */
-    }
-
-    .prospectus {
-        position: relative;
-        padding-top: 56.25%; /* 16:9 aspect ratio (adjust if needed) */
-        margin: 0 auto;
-        max-width: 1200px; /* Optional max-width for larger screens */
-    }
-
-    .prospectus iframe {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        border: none;
-        overflow: auto; /* Ensures scrollbars appear when needed */
-    }
-
-    /* Responsive adjustments for small devices */
-    @media (max-width: 768px) {
-        .prospectus {
-            padding-top: 75%; /* Increase aspect ratio for better visibility */
-        }
-    }
-
-    @media (max-width: 480px) {
-        .prospectus {
-            padding-top: 100%; /* 1:1 aspect ratio for smallest screens */
-        }
-    }
-</style>
-

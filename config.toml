@@ -1,6 +1,5 @@
 # Site settings
 baseURL = "https://localhost:1313/"
-#baseURL = "https://halloumiunknown.github.io/UQ_MARS_WEBSITE/"
 languageCode = "en-us"
 title = "UQ MARS"
 
@@ -14,7 +13,7 @@ title = "UQ MARS"
     name = "UQ MARS"
     full_name = "The University of Queeensland Mechatronics and Robotics Society"
 
-    description = "UQ Mars (Mechatronics and Robotics Society) is a community that fosters robotics and mechatronics skills through competitions, workshops, and social events, welcoming anyone with a passion for these fields."
+    description = "UQ MARS (Mechatronics and Robotics Society) is a community that fosters robotics and mechatronics skills through competitions, workshops, and social events, welcoming anyone with a passion for these fields."
 
     custom_css = ["css/main.css", "css/website.css"]
     custom_js  = ["js/navigation.js", "js/button-box.js", "js/favicon.js"]
