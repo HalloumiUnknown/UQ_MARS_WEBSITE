@@ -1,5 +1,6 @@
 # Site settings
-baseURL = "https://halloumiunknown.github.io/UQ_MARS_WEBSITE/"
+#baseURL = "https://halloumiunknown.github.io/UQ_MARS_WEBSITE/"
+baseURL = "http://localhost:1313/"
 languageCode = "en-us"
 title = "UQ MARS"
 
