@@ -17,5 +17,5 @@ title = "UQ MARS"
 
     custom_css = ["css/main.css", "css/website.css"]
     custom_js  = ["js/navigation.js", "js/button-box.js", "js/favicon.js"]
-    custom_ico = "img/favicon/favicon.ico"
+    custom_ico = "../img/favicon/favicon.ico"
     custom_fonts = []
